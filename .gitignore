@@ -1,0 +1,8 @@
+*.pem
+*.key
+*.pcap
+*.vmdk
+*.ova
+vm-*.img
+evidences/raw/*
+tools/wordlists/*

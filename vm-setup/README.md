@@ -24,34 +24,21 @@ Este ambiente deve ser usado APENAS para fins educacionais em um laboratório is
    - Máscara: `255.255.255.0`
    - Desabilitar DHCP
 
-[Adicionar screenshot aqui: 01_host_network.png]
+![Print das configurações de host](/evidences/screenshots/01_network_diagram.png)
 
 ### 2. Configuração do Kali Linux
 1. Importar VM do Kali
    - RAM: 2-4GB
    - CPU: 2 cores
    - Rede: Host-Only Adapter
-   - IP Estático: `192.168.56.10`
-
-2. Configurações pós-importação:
-```bash
-# No Kali, editar /etc/network/interfaces:
-auto eth0
-iface eth0 inet static
-address 192.168.56.10
-netmask 255.255.255.0
-```
-
-[Adicionar screenshot aqui: 02_kali_network.png]
+   - IP Estático: `192.168.56.101`
 
 ### 3. Configuração do Metasploitable 2
 1. Importar VM do Metasploitable
    - RAM: 1-2GB
    - CPU: 1 core
    - Rede: Host-Only Adapter
-   - IP: DHCP ou estático (`192.168.56.20`)
-
-[Adicionar screenshot aqui: 03_metasploitable_import.png]
+   - IP: DHCP ou estático (`192.168.56.102`)
 
 ## 🔒 Configurações de Segurança
 
@@ -69,17 +56,17 @@ netmask 255.255.255.0
    - Nome: "Base Setup"
    - Descrição: "Configuração inicial"
 
-[Adicionar screenshot aqui: 04_snapshots.png]
+![Print](/evidences/screenshots/04_snapshots.png)
 
 ## ✅ Verificação do Ambiente
 
 ### 1. Teste de Conectividade
 ```bash
 # No Kali, testar conexão:
-ping 192.168.56.20  # IP do Metasploitable
+ping 192.168.56.102  # IP do Metasploitable
 
 # No Metasploitable, testar conexão:
-ping 192.168.56.10  # IP do Kali
+ping 192.168.56.101  # IP do Kali
 ```
 
 ### 2. Verificação de Isolamento
@@ -88,7 +75,7 @@ ping 192.168.56.10  # IP do Kali
 ping 8.8.8.8  # Deve falhar
 ```
 
-[Adicionar screenshot aqui: 05_network_test.png]
+![Adicionar screenshot aqui: ](/evidences//screenshots/05_network_test.png)
 
 ## 🚫 Precauções de Segurança
 1. NUNCA deixar as VMs em modo Bridge

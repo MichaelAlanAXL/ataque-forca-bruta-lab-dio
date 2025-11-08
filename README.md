@@ -1,6 +1,6 @@
 # Laboratório de Análise de Ataques de Força Bruta
 
-⚠️ **AVISO LEGAL**: Este projeto foi desenvolvido em ambiente controlado e isolado usando máquinas virtuais locais. NÃO realize testes de segurança em sistemas sem permissão expressa. Este repositório não contém senhas reais nem wordlists com dados sensíveis.
+⚠️ **AVISO LEGAL**: Este projeto foi desenvolvido em ambiente controlado e isolado usando máquinas virtuais locais. NÃO realize testes de segurança em sistemas sem permissão expressa.
 
 ## 🎯 Objetivo
 Demonstrar vulnerabilidades relacionadas a ataques de força bruta em ambientes controlados e, principalmente, apresentar medidas efetivas de proteção contra esses ataques.
@@ -23,22 +23,18 @@ Demonstrar vulnerabilidades relacionadas a ataques de força bruta em ambientes 
 
 ### Configuração da Rede
 ![Diagrama de Rede](evidences/screenshots/01_network_diagram.png)
-[Adicione aqui um diagrama ou screenshot da configuração de rede das VMs]
 
 ### Máquinas Virtuais
 ![Setup VMs](evidences/screenshots/02_vm_setup.png)
-[Adicione aqui screenshots do VirtualBox/VMware mostrando as VMs]
 
 ## 🔍 Demonstração do Ataque
 > ⚠️ **Importante**: Esta seção mostra apenas resultados resumidos. Detalhes específicos de exploração foram omitidos intencionalmente.
 
 ### Enumeração Inicial
 ![Nmap Scan](evidences/screenshots/03_nmap_scan.png)
-[Adicione aqui resultado do scan inicial]
 
 ### Tentativa de Força Bruta
 ![Medusa Output](evidences/screenshots/04_medusa_output.png)
-[Adicione aqui saída do Medusa com dados sensíveis removidos]
 
 ## 🛡️ Mitigações e Proteções
 
@@ -54,7 +50,7 @@ Demonstrar vulnerabilidades relacionadas a ataques de força bruta em ambientes 
 - Blacklist de senhas comuns
 
 ### 3. Implementação de 2FA/MFA
-- Autenticação em dois fatores
+- Autenticação em dois fatores (obrigatório hoje em dia)
 - Uso de aplicativos autenticadores
 - Tokens físicos de segurança
 
@@ -74,8 +70,7 @@ Demonstrar vulnerabilidades relacionadas a ataques de força bruta em ambientes 
 Consulte o guia detalhado em [vm-setup/README.md](vm-setup/README.md)
 
 ### Passo 2: Configuração da Rede
-![Network Config](evidences/screenshots/05_network_config.png)
-[Adicione aqui configurações de rede]
+![Network Config](evidences/screenshots/01_network_diagram.png)
 
 ### Passo 3: Testes e Coleta de Evidências
 Consulte o guia em [docs/metodologia.md](docs/metodologia.md)
@@ -89,4 +84,4 @@ Consulte o guia em [docs/metodologia.md](docs/metodologia.md)
 Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
 ## ✍️ Autor
-Desenvolvido por [Seu Nome] para o Bootcamp Santander Cibersegurança - DIO.
+Desenvolvido por Michael Alan para o Bootcamp Santander Cibersegurança - DIO.
